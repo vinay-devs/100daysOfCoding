@@ -1,0 +1,7 @@
+<%- include("../partials/head.ejs") %>
+<%- include("../partials/header.ejs") %>
+<h1>Myself <%= user.name %></h1>
+
+<% user.number.forEach((e)=>{ %>
+<p>Hello<%= e%></p>
+<%})%> <%- include("../partials/footer.ejs") %>

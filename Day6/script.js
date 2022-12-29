@@ -56,10 +56,11 @@ function handleResultValidation() {
         }
         if (a === b && b === c) {
             roundWon = true;
+            handlePlayerChange()
             break
         }
     }
-    console.log(gameState);
+    console.log(roundWon);
 if (roundWon) {
         displayStatus.innerHTML = winningMessage();
         gameActive = false;
@@ -71,13 +72,14 @@ if (roundWon) {
         gameActive = false;
         return;
     }
-    handlePlayerChange()
 }
 function handleRestartGame() {
     gameActive = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
-    displayStatus.innerHTML = currentPlayerTurn();
+    displayStatus.innerHTML = showTurn();
     document.querySelectorAll('.cell')
                .forEach(cell => cell.innerHTML = "");
 }
+
+document.querySelector('.restart').addEventListener('click',handleRestartGame)

@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+body{
+   background-color: blue;
+}
+
+body.lightMode{
+    background-color: aliceblue;
+}
+
+.note_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.hidden{
+    visibility: hidden;
+}

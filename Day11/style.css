@@ -1,0 +1,27 @@
+.btn{
+    margin: auto;
+}
+
+button{
+    margin: 50px;
+    padding: 7px;
+    width:150px;
+    border-radius: 5px;
+    color: white;
+    background-color: rosybrown;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid black;
+    margin-left: 35%;
+    width: fit-content;
+}

@@ -27,7 +27,7 @@ function addNewNote(text=''){
             <button class="delete"><i class="fas fa-trash"></i>Delete</button>
         </div>
         <div class="main ${text ? '' : 'hidden'}"></div>
-        <textarea class="${text ? 'hidden' : ''}"></textarea>
+        <textarea class="${text ? '' : ''}"></textarea>
     `
     note_grid.append(note)
 
@@ -38,7 +38,7 @@ function addNewNote(text=''){
     updateLc()
 
     textarea.addEventListener('input',(e)=>{
-        const {value}=e.value
+        const {value}=e.target
         console.log(value);
         
         main.innerHTML=value

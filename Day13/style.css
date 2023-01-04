@@ -1,0 +1,38 @@
+.generate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #3c6382;
+}
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3c6382;
+    padding: 10px;
+}
+.password label {
+	font-size: 19px;
+}
+
+.options {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.option {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.option label {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}

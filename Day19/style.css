@@ -1,0 +1,87 @@
+h1{
+    color: white;
+}
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #00b894;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+#search_post{
+    padding: 0.8rem;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    width: 800px;
+    outline: none;
+}
+.post{
+    position: relative;
+    background-color: white;
+    width: 800px;
+    display: flex;
+    row-gap: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.post .postNumber{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #00b894;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.post .post-info{
+    margin-left: 20px;
+    color: #2d3436;
+}
+.post .postTitle{
+    margin: 0;
+    font-size: 20px;
+    width: 500px;
+    max-width: 95%;
+}
+.post .postContent{
+    padding-top: 15px;
+}
+.post_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.loader {
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    transition: opacity 0.3s ease-in;
+}
+
+.loader.show {
+    opacity: 1;
+}
+
+.circle {
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    animation: bounce 0.5s ease-in infinite;
+}

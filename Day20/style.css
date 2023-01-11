@@ -1,0 +1,60 @@
+body.darkmode{
+    background-color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+body header h1{
+    margin: 0%;
+}
+body.darkmode header h1{
+    
+    color: white;
+}
+
+header #mode{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quiz{
+    border: 2px solid black;
+    width: 600px;
+    border-radius: 10px;
+}
+body.darkmode .quiz{
+    color:black;
+    background-color: white;
+}
+h3{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+}
+ul li{
+    padding: 10px;
+}
+.quiz button{
+    width: 600px;
+    padding: 10px;
+    background-color: aqua;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.quiz button:hover{
+    background-color: blue;
+    cursor: pointer;
+}

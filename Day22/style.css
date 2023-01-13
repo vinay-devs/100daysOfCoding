@@ -1,0 +1,65 @@
+.container{
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    
+}
+
+header input{
+    border-radius: 7px;
+    margin: 8px;    
+}
+header .title{
+    margin: 12px;
+}
+header .subtitle{
+    margin-left: 12px;
+}
+
+.user-list{
+    max-height: 400px;
+    overflow-y: auto;
+}
+.user-list li {
+	display: flex;
+	padding: 20px;
+}
+
+.user-list img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 50px;
+	width: 50px;
+}
+
+.user-info {
+	margin-left: 10px;
+}
+
+.user-info h4 {
+	margin: 0 0 10px;
+}
+
+.user-info p {
+	font-size: 12px;
+}
+
+.user-list li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+.hide {
+	display: none !important;
+}

@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    width: 90vw;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color:white;
+    flex:0.5;
+}
+.panel h3{
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active  h3{
+    opacity: 1;
+}

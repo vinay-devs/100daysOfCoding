@@ -1,0 +1,26 @@
+.speed{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 30vh;
+    padding: 10px;
+    margin:0 auto 0 auto;
+}
+body{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+input{
+    width: 50px;
+    text-align: center;
+}

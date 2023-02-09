@@ -1,0 +1,30 @@
+
+body{
+    width: 1300px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 10px;
+    max-width: 95%;
+}
+
+
+@media screen and (max-width:741px){
+    .container{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    body{
+        width: 600px;
+    }
+}
+

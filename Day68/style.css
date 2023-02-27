@@ -1,0 +1,39 @@
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(./jQiHGo.png);
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container p {
+    text-align: center;
+    color: rgb(163, 163, 163);
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: rgb(59, 71, 181);
+    border: none;
+    padding: 10px;
+}

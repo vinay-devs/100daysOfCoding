@@ -5,8 +5,11 @@ import Tile from "./components/Tile";
 
 function App() {
   const [tiles, setTile] = useState([]);
+  const [number, setNumber] = useState(1);
   function addButtonHandler(number) {
-    setTile(number);
+    setTile([...tiles, number]);
+    console.log(number);
+    setNumber(number++);
   }
   return (
     <div
@@ -18,8 +21,8 @@ function App() {
       }}
     >
       <Header></Header>
-      {tiles.map((tile, index) => {
-        return <Tile addButtonHandler={addButtonHandler} id={index}></Tile>;
+      {tiles.map((e, i) => {
+        return <Tile id={i} number={number} />;
       })}
       <button onClick={addButtonHandler} style={{ maxWidth: "min-content" }}>
         ADD

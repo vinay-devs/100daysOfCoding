@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function Tile(props) {
-  const [number, setNumber] = useState(1);
   return (
-    <TileStyle>
-      <p>{number}</p>
+    <TileStyle id={props.id}>
+      <p>{props.number}</p>
     </TileStyle>
   );
 }

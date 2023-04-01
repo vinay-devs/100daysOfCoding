@@ -1,0 +1,43 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 0%;
+  height: 100vh;
+}
+.content {
+  border-radius: 10px;
+  height: inherit;
+  overflow: hidden;
+  align-items: center;
+  border: 2px solid hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0%;
+}
+.rightSide p {
+  font-size: 14px;
+}
+.rightSide {
+  padding: 0px 15px 0px 15px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.leftSide img {
+  height: 400px;
+}
+.rightSide span {
+  text-decoration: line-through;
+  font-size: small;
+}
+.rightSide button {
+  color: white;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  padding: 8px 50px 8px 50px;
+  border-radius: 8px;
+}
+
+.rightSide button:hover {
+  background-color: hsl(228, 12%, 48%);
+}
